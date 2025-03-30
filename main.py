@@ -5,7 +5,7 @@ from display import show_pixel_wise_matching, show_window_based_matching, show_w
 from utils import get_valid_input
 
 path_to_img_left = 'data/Aloe_left_1.png'
-path_to_img_right = 'data/Aloe_right_1.png'
+path_to_img_right = 'data/Aloe_right_2.png'
 
 def main():
     (img_l, img_r, 
@@ -43,7 +43,6 @@ def main():
     depth_window_cosine_color = cv2.applyColorMap(depth_window_cosine_normalize, cv2.COLORMAP_JET)
 
     ans = get_valid_input('Do you want to watch origin img? (yes/no): ', ['yes', 'no'])
-
 
     if ans == 'yes':
         cv2.imshow('Origin Left', img_l)

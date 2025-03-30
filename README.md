@@ -1,10 +1,19 @@
 # Depth Information Reconstruction
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Project Structure](#-project-structure)
+3. [Installation & Usage](#-installation--usage)
+4. [Results & Visualization](#-results--visualization)
+5. [Contact](#-contact)
+
 ## Introduction
 This project aims to reconstruct depth information from a pair of stereo images by computing and visualizing the disparity map. Various image processing methods are applied, including:
 
 - ✅ **Pixel-wise Matching**: Calculates disparity per pixel using L1 (abs error) and L2 (square error) distance metrics.
 - ✅ **Window-based Matching**: Uses a window to compare pixel vectors for smoother results.
-- ✅ **Cosine Similarity & Correlation Coefficient**: Enhances quality by reducing noise with optimized parameters.
+- ✅ **Cosine Similarity**: Enhances quality by reducing noise with optimized parameters.
 
 ## 📂 Project Structure
 📂 **Depth-Information-Reconstruction**  
@@ -59,6 +68,7 @@ Disparity maps can be visualized in grayscale and color maps:
 | Pixel-wise Matching     | ![Pixel_Gray](result/pixel_gray.png) | ![Pixel_Color](result/pixel_color.png) |
 | Window-based Matching   | ![Window_Gray](result/window_gray.png) | ![Window_Color](result/window_color.png) |
 | Cosine Similarity       | ![Window_Cosine_Gray](result/window_cosine_gray.png) | ![Window_Cosine_Color](result/window_cosine_color.png) |
-| Correlation Coefficient | temp | temp |
 
-
+## 📩 Contact
+- **Email:** [hungvv109@gmail.com](mailto:hungvv109@gmail.com)
+- **LinkedIn:** [Hung Vu](https://www.linkedin.com/in/hung-vu-70b472282/?originalSubdomain=vn)
