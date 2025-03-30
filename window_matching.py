@@ -2,18 +2,7 @@ import numpy as np
 import cv2
 
 def window_based_matching_vectorized(img_l, img_r, disparity_range, kernel_size):
-    """
-    Tính disparity map theo phương pháp window-based matching sử dụng vector hóa và boxFilter.
-    Sử dụng L1 và L2 cost, với tổng chi phí được tính theo cửa sổ (window) kích thước kernel_size.
     
-    Tham số:
-      img_l, img_r: Ảnh grayscale (numpy.ndarray, dtype=float32) có kích thước (height, width)
-      disparity_range: Số giá trị disparity cần kiểm tra (ví dụ 64)
-      kernel_size: Kích thước của cửa sổ (ví dụ 5)
-    
-    Trả về:
-      disparity_map_l1, disparity_map_l2: Hai disparity map dạng uint8, đã được normalize.
-    """
     height, width = img_l.shape
     max_value = 255.0
     kernel = (kernel_size, kernel_size)
@@ -34,7 +23,6 @@ def window_based_matching_vectorized(img_l, img_r, disparity_range, kernel_size)
             diff2[:, :d] = max_value ** 2
             diff2[:, d:] = (img_l[:, d:] - img_r[:, :-d]) ** 2
 
-        # Tính tổng chi phí trong cửa sổ bằng boxFilter
         cost_l1 = cv2.boxFilter(diff, ddepth=-1, ksize=kernel, normalize=False)
         cost_l2 = cv2.boxFilter(diff2, ddepth=-1, ksize=kernel, normalize=False)
 

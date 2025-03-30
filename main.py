@@ -4,9 +4,8 @@ from disparity import cal_disparity_map_vectorized
 from display import show_pixel_wise_matching, show_window_based_matching
 from utils import get_valid_input
 
-# Đường dẫn đến ảnh (đảm bảo rằng thư mục data chứa các file ảnh tương ứng)
 path_to_img_left = 'data/Aloe_left_1.png'
-path_to_img_right = 'data/Aloe_right_2.png'
+path_to_img_right = 'data/Aloe_right_1.png'
 
 def main():
     (img_l, img_r, 
