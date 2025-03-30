@@ -48,6 +48,11 @@ result = window_based_matching('data/left.png', 'data/right.png', disparity_rang
 ```
 
 ## 📊 Results & Visualization
+Origin image:
+| Image Left | Image Right |
+|------------|-------------|
+| ![left](data/Aloe_left_1.png) | [right](data/Aloe_right_1.png) |
+
 Disparity maps can be visualized in grayscale and color maps:
 | Method                  | Grayscale Disparity | Color Map Disparity |
 |-------------------------|---------------------|---------------------|
