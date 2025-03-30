@@ -53,3 +53,10 @@ Disparity maps can be visualized in grayscale and color maps:
 img
 #### Color Map Disparity
 img
+
+| Method                  | Description |
+|-------------------------|------------|
+| Pixel-wise Matching     | Computes disparity at each pixel using L1/L2 distances |
+| Window-based Matching   | Uses a window for smoother disparity calculation |
+| Cosine Similarity       | Enhances disparity map quality by reducing noise |
+| Correlation Coefficient | Measures similarity to improve accuracy |
