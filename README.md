@@ -49,7 +49,11 @@ result = window_based_matching('data/left.png', 'data/right.png', disparity_rang
 
 ## 📊 Results & Visualization
 Disparity maps can be visualized in grayscale and color maps:
-|--------------------| Grayscale Disparity | | Color Map Disparity |
-|Pixel-wise matching|--------------------|--------------------|
-|Window-based matching|--------------------|--------------------|
+| Method                  | Description |
+|-------------------------|------------|
+| Pixel-wise Matching     | Computes disparity at each pixel using L1/L2 distances |
+| Window-based Matching   | Uses a window for smoother disparity calculation |
+| Cosine Similarity       | Enhances disparity map quality by reducing noise |
+| Correlation Coefficient | Measures similarity to improve accuracy |
+
 
