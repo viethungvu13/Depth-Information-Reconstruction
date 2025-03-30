@@ -49,7 +49,7 @@ result = window_based_matching('data/left.png', 'data/right.png', disparity_rang
 
 ### 📊 Results & Visualization
 Disparity maps can be visualized in grayscale and color maps:
-**Grayscale Disparity**
+#### Grayscale Disparity
 img
-**Color Map Disparity**
+#### Color Map Disparity
 img
