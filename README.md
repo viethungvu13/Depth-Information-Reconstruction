@@ -47,16 +47,10 @@ from disparity import window_based_matching
 result = window_based_matching('data/left.png', 'data/right.png', disparity_range=16, kernel_size=5)
 ```
 
-### 📊 Results & Visualization
+## 📊 Results & Visualization
 Disparity maps can be visualized in grayscale and color maps:
-#### Grayscale Disparity
+### Grayscale Disparity
 img
-#### Color Map Disparity
+### Color Map Disparity
 img
 
-| Method                  | Description |
-|-------------------------|------------|
-| Pixel-wise Matching     | Computes disparity at each pixel using L1/L2 distances |
-| Window-based Matching   | Uses a window for smoother disparity calculation |
-| Cosine Similarity       | Enhances disparity map quality by reducing noise |
-| Correlation Coefficient | Measures similarity to improve accuracy |
