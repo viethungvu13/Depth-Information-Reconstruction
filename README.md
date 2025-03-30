@@ -2,7 +2,7 @@
 ## Introduction
 This project aims to reconstruct depth information from a pair of stereo images by computing and visualizing the disparity map. Various image processing methods are applied, including:
 
-- ✅ **Pixel-wise Matching**: Calculates disparity per pixel using L1 and L2 distance metrics.
+- ✅ **Pixel-wise Matching**: Calculates disparity per pixel using L1 (abs error) and L2 (square error) distance metrics.
 - ✅ **Window-based Matching**: Uses a window to compare pixel vectors for smoother results.
 - ✅ **Cosine Similarity & Correlation Coefficient**: Enhances quality by reducing noise with optimized parameters.
 
@@ -20,9 +20,9 @@ This project aims to reconstruct depth information from a pair of stereo images 
  ├── 📜 **requirements.txt**      # Dependencies  
  └── 📜 **README.md**             # Project documentation 
 
- ## 🚀 Installation & Usage
+## 🚀 Installation & Usage
 
- ### 1️⃣ Prerequisites
+### 1️⃣ Prerequisites
 
 Ensure you have:
 
@@ -49,6 +49,7 @@ result = window_based_matching('data/left.png', 'data/right.png', disparity_rang
 
 ## 📊 Results & Visualization
 Origin image:
+
 <table>
   <tr>
     <th>Left</th>
@@ -65,7 +66,7 @@ Disparity maps can be visualized in grayscale and color maps:
 |-------------------------|---------------------|---------------------|
 | Pixel-wise Matching     | ![Pixel_Gray](result/pixel_gray.png) | ![Pixel_Color](result/pixel_color.png) |
 | Window-based Matching   | ![Window_Gray](result/window_gray.png) | ![Window_Color](result/window_color.png) |
-| Cosine Similarity       | Enhances disparity map quality by reducing noise | temp |
+| Cosine Similarity       | ![Window_Cosine_Gray](result/window_cosine_gray.png) | ![Window_Cosine_Color](result/window_cosine_color.png) |
 | Correlation Coefficient | Measures similarity to improve accuracy | temp |
 
 
